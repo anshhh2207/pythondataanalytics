@@ -34,10 +34,15 @@ while i < len(words):
 
 #number of vowels
 words = ["apple", "cat", "banana", "dog", "orange"]
+count=0
 i = 0
+vowels="AEIOUaeiou"
 while i < len(words):
-    print(words[i], ":", len(words[i]))
+    for ch in words[i]:
+        if ch in vowels:
+         count+=1
     i = i + 1
+print("No of vowels:",count)
 
 #Functions
 #write a function that take a list and removes dulpicates
